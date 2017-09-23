@@ -1,3 +1,16 @@
-<h1>
-  {{title}}
-</h1>
+
+<div class='main'>
+  <div class='city'>
+      <h2 >{{city}}</h2>
+  </div>
+
+  <div class='weatherChildContainer'>
+    <div class='weatherChild' *ngFor='let forecast of data.list'>
+        <h3 class='date'>{{forecast.dt_txt}}</h3>
+        <h2 class='temp'>{{forecast.main.temp}} °F</h2>
+        <div *ngFor="let time of forecast.weather">
+          <h3 class='description'>{{time.main}}</h3>
+        </div>
+    </div>
+  </div>
+</div>

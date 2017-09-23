@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin:0px;
+    background:url('https://images.unsplash.com/photo-1445634227949-3662b765f443?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=') no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
