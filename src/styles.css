@@ -1,7 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-    margin:0px;
-    background:url('https://images.unsplash.com/photo-1445634227949-3662b765f443?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=') no-repeat;
+body.day{
+    transition:   1s ease-in-out;
+    background:url('https://images.unsplash.com/photo-1424581342241-2b1aba4d3462?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+    background-repeat: no-repeat;     
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+
+body.night {
+    transition:   1s ease-in-out;
+    background:url('https://images.unsplash.com/photo-1485964004367-e6fac77f8c86?dpr=1&auto=format&fit=crop&w=1500&h=997&q=80&cs=tinysrgb&crop=');
+    background-repeat: no-repeat;     
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+
+body.irvine {
+    transition:   0.5s ease-in-out;
+    background:url('https://svcdn.simpleviewinc.com/v3/cache/www_destinationirvine_com/EFF29FA46647363DEBE83E0A6CA78582.jpg');
+    background-repeat: no-repeat;     
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+
+body.la {
+    transition:   0.5s ease-in-out;
+    background:url('https://images.unsplash.com/photo-1445634227949-3662b765f443?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+    background-repeat: no-repeat;     
     background-size:cover;
     background-attachment: fixed;
 }

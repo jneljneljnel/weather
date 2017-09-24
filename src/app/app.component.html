@@ -6,10 +6,13 @@
 
   <div class='weatherChildContainer'>
     <div class='weatherChild' *ngFor='let forecast of data.list'>
-        <h3 class='date'>{{forecast.dt_txt}}</h3>
+      <div class='iconContainer' *ngFor="let time of forecast.weather">
+          <i [ngClass]="getIcon(time.description)" class="wi" ></i>
+        </div>
+        <h3 class='date'>{{forecast.dt_txt}}</h3>        
         <h2 class='temp'>{{forecast.main.temp}} °F</h2>
         <div *ngFor="let time of forecast.weather">
-          <h3 class='description'>{{time.main}}</h3>
+          <h4 class='description'>{{time.description}}</h4>
         </div>
     </div>
   </div>
