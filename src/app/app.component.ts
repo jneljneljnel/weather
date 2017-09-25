@@ -83,33 +83,27 @@ export class AppComponent {
     })
   }
 
-  getIcon(desc){
+  getIcon(id){
     let icon
-    if(desc == 'clear sky'){
+    if(id == '800'){
       icon =  {'wi-day-sunny':true}
     }
-    if(desc == 'few clouds'){
-      icon =  {'wi-cloud':true}
-    }
-    if(desc == 'scattered clouds'){
+    if(id >= 801 && id <= 804){
       icon =  {'wi-cloudy':true}
     }
-    if(desc == 'broken clouds'){
-      icon =  {'wi-cloudy':true}
-    }
-    if(desc == 'shower rain'){
+    if(id >= 500 && id <= 531){
       icon =  {'wi-rain-wind':true}
     }
-    if(desc == 'rain'){
+    if(id >= 300 && id <= 321){
       icon =  {'wi-rain':true}
     }
-    if(desc == 'thunderstorm'){
+    if(id >= 200 && id <= 300){
       icon =  {'wi-thunderstorm':true}
     }
-    if(desc == 'snow'){
+    if(id >= 600 && id<= 622){
       icon =  {'wi-snow':true}
     }
-    if(desc == 'mist'){
+    if(id >= 700 && id <=781 ){
       icon =  {'wi-rain-mix':true}
     }
     return icon
