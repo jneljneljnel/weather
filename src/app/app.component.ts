@@ -44,7 +44,7 @@ export class AppComponent {
   }
 
   formApi(lat, lon){
-    let apiUrl = 'http://api.openweathermap.org/data/2.5/forecast?lat='+ lat + '&lon=' + lon +'&units=imperial&appid=2dfdb85c4f6856af79233fb6528a05ab';
+    let apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat='+ lat + '&lon=' + lon +'&units=imperial&appid=2dfdb85c4f6856af79233fb6528a05ab';
     return apiUrl;
   }
 
