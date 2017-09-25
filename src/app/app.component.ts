@@ -36,6 +36,13 @@ export class AppComponent {
     });
   }
 
+  getData(lat, lon){
+    // return this.http.get("http://35.193.165.66:8080")
+    //   .map((res:Response)=>res.json());
+    return this.http.get(this.formApi(lat, lon))
+      .map((res:Response)=>res.json())
+  }
+
   formApi(lat, lon){
     let apiUrl = 'http://api.openweathermap.org/data/2.5/forecast?lat='+ lat + '&lon=' + lon +'&units=imperial&appid=2dfdb85c4f6856af79233fb6528a05ab';
     return apiUrl;
@@ -64,10 +71,7 @@ export class AppComponent {
       return data
   }
 
-  getData(lat, lon){
-    return this.http.get(this.formApi(lat, lon))
-      .map((res:Response)=>res.json())
-  }
+
 
   formatIcon(data){
     data.list.forEach( el =>{
